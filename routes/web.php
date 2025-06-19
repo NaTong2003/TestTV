@@ -114,10 +114,10 @@ Route::prefix('seafarer')->middleware(['auth', 'isSeafarer'])->name('seafarer.')
 });
 
 
-
+//tự động đăng nhập
 
 Route::get('/login/seafarer-demo', function () {
-    // Giả sử bạn có user thuyền viên có email cụ thể hoặc role_id = 2
+
     $user = User::where('role_id', 2)->inRandomOrder()->first();
 
     if ($user) {
