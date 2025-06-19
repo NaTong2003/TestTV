@@ -13,6 +13,7 @@
         margin-top: -16px;
     }
 
+
     .feature-box {
         padding: 30px;
         border-radius: 10px;
@@ -67,9 +68,9 @@
                 <p class="lead mb-4"><i>Mời quý vị dùng thử vui lòng bấm vào nút dưới đây</i> <i class="fa-solid fa-hand-point-down"></i></p>
                 <div class="d-flex justify-content-center gap-3">
 
-                     <a href="{{ route('login.form') }}" class="btn btn-primary btn-lg px-4">
+                    {{-- <a href="{{ route('login.form') }}" class="btn btn-primary btn-lg px-4 btn-hidden">
                         <i class="fas fa-sign-in-alt me-2"></i> Admin
-                    </a>
+                    </a> --}}
                     {{-- tự động ddnagw nhập --}}
                     <a href="{{ route('seafarer.demo-login') }}" class="btn btn-primary btn-lg px-4">
                         <i class="fas fa-sign-in-alt me-2"></i> Dùng thử
